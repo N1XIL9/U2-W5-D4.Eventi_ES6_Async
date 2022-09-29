@@ -7,8 +7,8 @@ function selectItem(event) {
 
 function getInputAndAddItem(eventObject) {
 
-    if (eventObject.key !== 'Enter') { // Questa funzione, se non premo Enter, non fa nulla.
-      return; // Ritorna subito, esce subito.
+    if (eventObject.key !== 'Enter') {
+      return;
     }
   
     let input = document.getElementById('input-item')
@@ -24,6 +24,7 @@ function getInputAndAddItem(eventObject) {
     }
   }
 
-function trashItem (){
-    let trash = 
-}
+  function trashItem () {
+    let trash = document.getElementById ('items')
+    trash.classList.remove('trash')
+  }
