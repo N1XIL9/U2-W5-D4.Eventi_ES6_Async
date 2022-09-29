@@ -24,7 +24,7 @@ function getInputAndAddItem(eventObject) {
     }
   }
 
-  function trashItem () {
-    let trash = document.getElementById ('items')
-    trash.classList.remove('trash')
+  function trashItem() {
+    let cestino = document.getElementsByClassName('item')
+    cestino.classList.add('trash')
   }
