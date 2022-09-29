@@ -21,20 +21,24 @@
 <body>
     <div id="container">
         <h1>list</h1>
+        <input id="input-item" onkeydown="getInputAndAddItem(event)" type="text" placeholder="Add ingredient..." />
         <div id="items">
             <div class="item" onclick="selectItem(event)"> Apples <i class="fa-solid fa-trash-can"
-                    onclick="trash()"></i>
+                    onclick="trashItem()"></i>
             </div>
-            <div class="item" onclick="selectItem(event)">Lemons <i class="fa-solid fa-trash-can" onclick="trash()"></i>
+            <div class="item" onclick="selectItem(event)">Lemons <i class="fa-solid fa-trash-can"
+                    onclick="trashItem()"></i>
             </div>
             <div class="item selected" onclick="selectItem(event)">Milk <i class="fa-solid fa-trash-can"
-                    onclick="Trash()"></i></div>
+                    onclick="TrashItem()"></i></div>
             <div class="item" onclick="selectItem(event)">Peppers <i class="fa-solid fa-trash-can"
-                    onclick="trash()"></i>
+                    onclick="TrashItem()"></i>
             </div>
-            <div class="item" onclick="selectItem(event)">Pasta <i class="fa-solid fa-trash-can" onclick="trash()"></i>
+            <div class="item" onclick="selectItem(event)">Pasta <i class="fa-solid fa-trash-can"
+                    onclick="trashItem()"></i>
             </div>
-            <div class="item" onclick="selectItem(event)">Bread <i class="fa-solid fa-trash-can" onclick="trash()"></i>
+            <div class="item" onclick="selectItem(event)">Bread <i class="fa-solid fa-trash-can"
+                    onclick="trashItem()"></i>
             </div>
         </div>
 
