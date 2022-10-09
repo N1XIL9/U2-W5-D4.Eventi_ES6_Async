@@ -1,79 +1,148 @@
-body {
-    margin: 0;
+*,
+*:before,
+*:after {
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('/assets/img/Facetune_29-09-2022-21-43-54.JPG');
+    background-position: center;
     font-family: 'Indie Flower', cursive;
-    background-image: url('/assets/img/Facetune_29-09-2022-16-32-38.JPG');
 }
 
-#container {
-    margin: 0 auto;
+.todohone {
+    padding-top: 20px;
     text-align: center;
-    max-width: 250px;
-    border: 2px solid #ff6f00;
-    margin-top: 180px;
-    padding: 20px;
+    color: rgb(7, 7, 7);
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: rgb(252, 252, 252);
+    background-image: url("../img/grid-me.png");
+    box-shadow: 3px 4px 8px 3px rgb(0, 0, 0);
     border-radius: 10px;
-    box-shadow: 1px 2px 8px 2px black;
-    background-color: aliceblue;
+    border: 3px solid grey;
 }
 
-h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 10px;
-    text-transform: uppercase;
-    text-decoration: underline;
+#newtask {
+    position: relative;
+    padding: 30px 20px;
 }
 
-#items {
-    margin-top: 20px;
+#newtask input {
+    width: 75%;
+    height: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: 1px solid #3bcebd;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
 }
 
-#items div {
+#newtask input:focus {
+    outline: none;
+    border-color: #208a81;
+}
+
+#newtask button {
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #3bcebd;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+#newtask button:hover {
+    background-color: #258c42;
+    transition: 1s;
+}
+
+#tasks {
+    background-color: #ffffff00;
+    padding: 30px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+
+}
+
+.task {
+
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    border: 1px solid grey;
-    text-align: start;
-    padding: 10px;
-    border-bottom: 1px solid #ff6f00;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-radius: 3px;
-    margin-bottom: 5px;
+    border-bottom: 1px solid #3bcebd;
     cursor: pointer;
 }
 
-#items div:hover {
-    background-color: #ff6363;
+.task span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
 }
 
-p {
-    margin-top: 0;
-    margin-top: 0;
-    font-weight: 300;
-}
-
-hr {
-    margin-top: 0;
-}
-
-.selected {
-    background-color: #00ff73;
-    border-radius: 5px
-}
-
-input {
-    border: none;
-    padding: 10px;
-    width: 220px;
+.task button {
+    background-color: #0a80a4;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
     border-radius: 5px;
-    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.task button:hover {
+    background-color: #a40a30;
 
 }
 
-.trash {
-    display: none;
+
+/* ANIMAZIONE APERTURA PAGINA  */
+
+.main-bg {
+    background: url('/assets/img/Facetune_29-09-2022-21-43-54.JPG') no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(100px);
+}
+
+.loading-wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0%, 0%);
 }
